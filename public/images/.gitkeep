@@ -1,0 +1,8 @@
+# Pasta para imagens do site
+# Estrutura sugerida:
+# /images
+#   /projects/     - Imagens dos projetos do portfólio
+#   /team/         - Fotos da equipe
+#   /services/     - Imagens dos serviços
+#   /hero/         - Imagens do hero section
+

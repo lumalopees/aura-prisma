@@ -1,0 +1,55 @@
+[
+  {
+    "id": "branding",
+    "title": "Branding",
+    "shortDescription": "Construção de marcas autênticas e estratégicas",
+    "description": "Desenvolvemos estratégias de marca que conectam sua essência com seu público, criando uma comunicação sólida e autêntica.",
+    "targetAudience": "Para empresas que desejam construir uma comunicação sólida e autêntica",
+    "deliverables": [
+      "Imersão e DNA Empresarial",
+      "Estudo de Mercado e Público",
+      "Arquitetura de Marca",
+      "Diretrizes de Comunicação e Estratégia de Marca"
+    ]
+  },
+  {
+    "id": "identidade-visual",
+    "title": "Identidade Visual",
+    "shortDescription": "Transformamos a essência da sua marca em identidade visual única",
+    "description": "Criamos identidades visuais autênticas, expressivas e consistentes que geram reconhecimento e diferenciação.",
+    "targetAudience": "Para empresas que precisam de uma marca autêntica, expressiva e consistente",
+    "deliverables": [
+      "Marca gráfica e submarcas",
+      "Sistema visual e ilustrações",
+      "Diretrizes de comunicação visual",
+      "Animações e 3D"
+    ]
+  },
+  {
+    "id": "social-media",
+    "title": "Social Media",
+    "shortDescription": "Estratégia e conteúdo para suas redes sociais",
+    "description": "Desenvolvemos estratégias de social media que fortalecem a identidade da marca e geram engajamento autêntico.",
+    "targetAudience": "Para empresas que querem fortalecer sua presença digital nas redes sociais",
+    "deliverables": [
+      "Estratégia de conteúdo",
+      "Planejamento editorial",
+      "Criação de conteúdo visual",
+      "Gestão e monitoramento"
+    ]
+  },
+  {
+    "id": "posicionamento-digital",
+    "title": "Posicionamento Digital",
+    "shortDescription": "Posicionamento estratégico no ambiente digital",
+    "description": "Ajudamos sua marca a se posicionar de forma clara e consistente no ambiente digital, ampliando seu impacto e alcance.",
+    "targetAudience": "Para empresas que buscam fortalecer sua presença e posicionamento digital",
+    "deliverables": [
+      "Estratégia de posicionamento",
+      "Análise de concorrência",
+      "Plano de comunicação digital",
+      "Diretrizes de tom e voz"
+    ]
+  }
+]
+

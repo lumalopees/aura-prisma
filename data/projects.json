@@ -1,0 +1,30 @@
+[
+  {
+    "id": "project-1",
+    "title": "Projeto Exemplo 1",
+    "category": "branding",
+    "description": "Breve descrição do projeto",
+    "image": "/images/projects/project-1.jpg",
+    "client": "Cliente Exemplo",
+    "year": "2024"
+  },
+  {
+    "id": "project-2",
+    "title": "Projeto Exemplo 2",
+    "category": "identidade-visual",
+    "description": "Breve descrição do projeto",
+    "image": "/images/projects/project-2.jpg",
+    "client": "Cliente Exemplo",
+    "year": "2024"
+  },
+  {
+    "id": "project-3",
+    "title": "Projeto Exemplo 3",
+    "category": "social-media",
+    "description": "Breve descrição do projeto",
+    "image": "/images/projects/project-3.jpg",
+    "client": "Cliente Exemplo",
+    "year": "2024"
+  }
+]
+
