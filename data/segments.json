@@ -1,0 +1,27 @@
+[
+  {
+    "id": "startups",
+    "title": "Startups",
+    "description": "Branding estratégico para empresas em fase inicial que precisam se posicionar com clareza desde o início.",
+    "services": ["Branding", "Identidade Visual", "Posicionamento Digital"]
+  },
+  {
+    "id": "ecommerce",
+    "title": "E-commerce",
+    "description": "Criamos marcas que se destacam no ambiente digital e conectam com o público certo.",
+    "services": ["Branding", "Social Media", "Posicionamento Digital"]
+  },
+  {
+    "id": "servicos",
+    "title": "Serviços",
+    "description": "Posicionamento e comunicação que transmitem credibilidade e geram confiança.",
+    "services": ["Branding", "Identidade Visual", "Social Media"]
+  },
+  {
+    "id": "lifestyle",
+    "title": "Lifestyle",
+    "description": "Marcas autênticas que expressam valores e criam conexão emocional com o público.",
+    "services": ["Branding", "Identidade Visual", "Social Media"]
+  }
+]
+

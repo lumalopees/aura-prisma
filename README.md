@@ -22,13 +22,22 @@ aura-prisma/
 │   ├── layout/           # Componentes de layout
 │   │   ├── Header.tsx    # Cabeçalho com navegação
 │   │   └── Footer.tsx    # Rodapé
+│   ├── sections/         # Seções da página
+│   │   ├── Hero.tsx      # Hero section
+│   │   ├── ServicesPreview.tsx # Preview de serviços
+│   │   ├── SocialProof.tsx     # Prova social
+│   │   ├── PortfolioPreview.tsx # Preview do portfólio
+│   │   ├── Segments.tsx        # Segmentos atendidos
+│   │   └── ContactForm.tsx     # Formulário de contato
 │   └── ui/               # Componentes de UI
 │       ├── Button.tsx    # Botão reutilizável
 │       ├── Card.tsx      # Card component
 │       └── Container.tsx # Container wrapper
 ├── data/                 # Dados estáticos (JSON)
 │   ├── services.json     # Serviços oferecidos
-│   └── projects.json     # Projetos do portfólio
+│   ├── projects.json     # Projetos do portfólio
+│   ├── segments.json     # Segmentos atendidos
+│   └── stats.json        # Estatísticas e números
 ├── types/                # Definições TypeScript
 │   └── index.ts          # Tipos compartilhados
 └── public/               # Arquivos estáticos
@@ -94,15 +103,18 @@ O site estará disponível em `http://localhost:3000`
 - [x] Layout base (Header, Footer)
 - [x] Sistema de roteamento (App Router)
 
+### ✅ Fase 2: Página Home
+
+- [x] Hero Section com frase conceitual e CTAs
+- [x] Seção de Serviços resumidos (4 cards)
+- [x] Prova social (números e estatísticas)
+- [x] Portfólio preview (grid com 4 projetos)
+- [x] Segmentos atendidos (4 segmentos)
+- [x] Formulário de contato rápido
+
 ## 📋 Próximas Fases
 
-### 🔄 Fase 2: Página Home
-- Hero Section
-- Seção de Serviços (resumidos)
-- Prova social
-- Destaque visual / Portfólio preview
-- Segmentos atendidos
-- Formulário de contato rápido
+### 🔄 Fase 3: Página Sobre
 
 ### 📝 Fase 3: Página Sobre
 - História do estúdio
