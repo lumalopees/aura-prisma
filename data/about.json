@@ -1,0 +1,33 @@
+{
+  "history": {
+    "title": "Nossa História",
+    "content": "Somos um estúdio criativo que acredita em marcas construídas de dentro pra fora. Nascemos da paixão por transformar ideias em identidades visuais autênticas e estratégicas.\n\nAtuamos com marcas do Brasil e do mundo, formando times estratégicos e sob medida para cada desafio. Colaboramos com executivos, times de marketing, consultorias, agências e estúdios de design, unindo método, estratégia e sensibilidade para criar marcas autênticas, que se expressam de forma clara e consistente.\n\nCada projeto que nasce aqui é uma soma de olhares, ideias e histórias que se cruzam para construir algo maior."
+  },
+  "mission": {
+    "title": "Missão",
+    "description": "Criar marcas autênticas e estratégicas que conectam empresas com seus públicos, transformando intenções em presença marcante e resultados significativos."
+  },
+  "vision": {
+    "title": "Visão",
+    "description": "Ser reconhecidos como parceiros estratégicos que transformam desafios de marca em oportunidades de crescimento e diferenciação no mercado."
+  },
+  "values": [
+    {
+      "title": "Autenticidade",
+      "description": "Acreditamos que cada marca tem uma essência única que deve ser expressa com clareza e consistência."
+    },
+    {
+      "title": "Estratégia",
+      "description": "Cada decisão de design é fundamentada em pesquisa, análise e objetivos de negócio claros."
+    },
+    {
+      "title": "Colaboração",
+      "description": "Trabalhamos em parceria com nossos clientes, formando times estratégicos para cada desafio."
+    },
+    {
+      "title": "Excelência",
+      "description": "Buscamos sempre superar expectativas, entregando projetos que geram impacto real e duradouro."
+    }
+  ]
+}
+

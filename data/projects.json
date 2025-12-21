@@ -25,15 +25,6 @@
     "image": "/images/projects/project-3.jpg",
     "client": "Cliente Exemplo",
     "year": "2024"
-  },
-  {
-    "id": "project-4",
-    "title": "Projeto Exemplo 4",
-    "category": "posicionamento-digital",
-    "description": "Breve descrição do projeto",
-    "image": "/images/projects/project-4.jpg",
-    "client": "Cliente Exemplo",
-    "year": "2024"
   }
 ]
 

@@ -17,6 +17,8 @@ aura-prisma/
 ├── app/                    # App Router do Next.js
 │   ├── layout.tsx         # Layout principal
 │   ├── page.tsx           # Página Home
+│   ├── sobre/             # Página Sobre
+│   │   └── page.tsx
 │   └── globals.css        # Estilos globais
 ├── components/            # Componentes React
 │   ├── layout/           # Componentes de layout
@@ -28,7 +30,12 @@ aura-prisma/
 │   │   ├── SocialProof.tsx     # Prova social
 │   │   ├── PortfolioPreview.tsx # Preview do portfólio
 │   │   ├── Segments.tsx        # Segmentos atendidos
-│   │   └── ContactForm.tsx     # Formulário de contato
+│   │   ├── ContactForm.tsx     # Formulário de contato
+│   │   └── about/              # Seções da página Sobre
+│   │       ├── History.tsx     # História do estúdio
+│   │       ├── MissionVision.tsx # Missão, visão e valores
+│   │       ├── Team.tsx        # Equipe/Quem somos
+│   │       └── Process.tsx     # Processo de trabalho
 │   └── ui/               # Componentes de UI
 │       ├── Button.tsx    # Botão reutilizável
 │       ├── Card.tsx      # Card component
@@ -37,7 +44,10 @@ aura-prisma/
 │   ├── services.json     # Serviços oferecidos
 │   ├── projects.json     # Projetos do portfólio
 │   ├── segments.json     # Segmentos atendidos
-│   └── stats.json        # Estatísticas e números
+│   ├── stats.json        # Estatísticas e números
+│   ├── about.json        # Dados da página Sobre
+│   ├── team.json         # Dados da equipe
+│   └── process.json      # Processo de trabalho
 ├── types/                # Definições TypeScript
 │   └── index.ts          # Tipos compartilhados
 └── public/               # Arquivos estáticos
@@ -112,15 +122,14 @@ O site estará disponível em `http://localhost:3000`
 - [x] Segmentos atendidos (4 segmentos)
 - [x] Formulário de contato rápido
 
+### ✅ Fase 3: Página Sobre
+
+- [x] Seção História (layout imagem/texto lado a lado)
+- [x] Missão, Visão e Valores (cards com ícones)
+- [x] Equipe/Quem somos (grid de pessoas)
+- [x] Processo de Trabalho (timeline visual com 4 etapas)
+
 ## 📋 Próximas Fases
-
-### 🔄 Fase 3: Página Sobre
-
-### 📝 Fase 3: Página Sobre
-- História do estúdio
-- Missão, visão e valores
-- Equipe/Quem somos
-- Processo de trabalho
 
 ### 🎯 Fase 4: Página Serviços
 - Header da página

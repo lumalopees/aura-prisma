@@ -1,0 +1,27 @@
+[
+  {
+    "step": 1,
+    "title": "Imersão",
+    "description": "Conhecemos profundamente sua marca, mercado e público-alvo através de pesquisas e workshops colaborativos.",
+    "icon": "discover"
+  },
+  {
+    "step": 2,
+    "title": "Estratégia",
+    "description": "Definimos o posicionamento, arquitetura de marca e diretrizes de comunicação que guiarão todas as decisões.",
+    "icon": "strategy"
+  },
+  {
+    "step": 3,
+    "title": "Criação",
+    "description": "Transformamos a estratégia em identidade visual única, expressiva e consistente em todos os pontos de contato.",
+    "icon": "create"
+  },
+  {
+    "step": 4,
+    "title": "Implementação",
+    "description": "Aplicamos a identidade em todos os materiais e canais, garantindo consistência e impacto duradouro.",
+    "icon": "implement"
+  }
+]
+
