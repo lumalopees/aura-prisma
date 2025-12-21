@@ -19,6 +19,8 @@ aura-prisma/
 │   ├── page.tsx           # Página Home
 │   ├── sobre/             # Página Sobre
 │   │   └── page.tsx
+│   ├── servicos/          # Página Serviços
+│   │   └── page.tsx
 │   └── globals.css        # Estilos globais
 ├── components/            # Componentes React
 │   ├── layout/           # Componentes de layout
@@ -36,6 +38,11 @@ aura-prisma/
 │   │       ├── MissionVision.tsx # Missão, visão e valores
 │   │       ├── Team.tsx        # Equipe/Quem somos
 │   │       └── Process.tsx     # Processo de trabalho
+│   │   └── services/            # Seções da página Serviços
+│   │       ├── ServicesHeader.tsx # Header da página
+│   │       ├── ServiceDetail.tsx  # Detalhamento de serviço
+│   │       ├── ProcessSection.tsx  # Processo de trabalho
+│   │       └── ServicesCTA.tsx     # CTA final
 │   └── ui/               # Componentes de UI
 │       ├── Button.tsx    # Botão reutilizável
 │       ├── Card.tsx      # Card component
@@ -129,13 +136,15 @@ O site estará disponível em `http://localhost:3000`
 - [x] Equipe/Quem somos (grid de pessoas)
 - [x] Processo de Trabalho (timeline visual com 4 etapas)
 
-## 📋 Próximas Fases
+### ✅ Fase 4: Página Serviços
 
-### 🎯 Fase 4: Página Serviços
-- Header da página
-- Detalhamento de cada serviço
-- Processo de trabalho
-- CTA final
+- [x] Header da página com título e descrição
+- [x] Componente reutilizável de serviço detalhado
+- [x] Implementação dos 4 serviços (Branding, Identidade Visual, Social Media, Posicionamento Digital)
+- [x] Seção de processo de trabalho (versão simplificada)
+- [x] CTA final com fundo escuro
+
+## 📋 Próximas Fases
 
 ### 🖼️ Fase 5: Página Portfólio
 - Grid de projetos

@@ -48,6 +48,15 @@ export default function Button({
     );
   }
 
+  // Se não for link mas tiver href, usar Link do Next.js
+  if (href && !asLink) {
+    return (
+      <Link href={href} className={classes}>
+        {children}
+      </Link>
+    );
+  }
+
   return (
     <button className={classes} {...props}>
       {children}
