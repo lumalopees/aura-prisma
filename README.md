@@ -21,6 +21,13 @@ aura-prisma/
 │   │   └── page.tsx
 │   ├── servicos/          # Página Serviços
 │   │   └── page.tsx
+│   ├── portfolio/        # Página Portfólio
+│   │   └── page.tsx
+│   ├── contato/           # Página Contato
+│   │   └── page.tsx
+│   └── api/               # API Routes
+│       └── contact/        # API de contato
+│           └── route.ts
 │   └── globals.css        # Estilos globais
 ├── components/            # Componentes React
 │   ├── layout/           # Componentes de layout
@@ -43,6 +50,16 @@ aura-prisma/
 │   │       ├── ServiceDetail.tsx  # Detalhamento de serviço
 │   │       ├── ProcessSection.tsx  # Processo de trabalho
 │   │       └── ServicesCTA.tsx     # CTA final
+│   │   └── portfolio/              # Seções da página Portfólio
+│   │       ├── PortfolioHeader.tsx # Header e filtros
+│   │       ├── PortfolioGrid.tsx   # Grid de projetos
+│   │       ├── ProjectCard.tsx     # Card de projeto
+│   │       ├── ProjectModal.tsx    # Modal de detalhe
+│   │       └── PortfolioCTA.tsx    # CTA entre projetos
+│   │   └── contact/                # Seções da página Contato
+│   │       ├── ContactHeader.tsx   # Header acolhedor
+│   │       ├── ContactForm.tsx     # Formulário completo
+│   │       └── ContactCTA.tsx      # CTA final
 │   └── ui/               # Componentes de UI
 │       ├── Button.tsx    # Botão reutilizável
 │       ├── Card.tsx      # Card component
@@ -54,7 +71,8 @@ aura-prisma/
 │   ├── stats.json        # Estatísticas e números
 │   ├── about.json        # Dados da página Sobre
 │   ├── team.json         # Dados da equipe
-│   └── process.json      # Processo de trabalho
+│   ├── process.json      # Processo de trabalho
+│   └── contact.json      # Informações de contato
 ├── types/                # Definições TypeScript
 │   └── index.ts          # Tipos compartilhados
 └── public/               # Arquivos estáticos
@@ -144,19 +162,34 @@ O site estará disponível em `http://localhost:3000`
 - [x] Seção de processo de trabalho (versão simplificada)
 - [x] CTA final com fundo escuro
 
+### ✅ Fase 5: Página Portfólio
+
+- [x] Header da página com título e descrição
+- [x] Filtros por categoria (Todos, Branding, Identidade Visual, Social Media, Posicionamento Digital)
+- [x] Grid responsivo de projetos (3 colunas no desktop)
+- [x] Cards de projeto com hover effects
+- [x] Modal de detalhe do projeto com galeria de imagens
+- [x] Navegação entre projetos (anterior/próximo)
+- [x] Descrição completa, desafio e solução
+- [x] Informações detalhadas (cliente, ano, serviços)
+- [x] CTA entre projetos
+- [x] Estrutura de dados completa com placeholders
+
+### ✅ Fase 6: Página Contato
+
+- [x] Header acolhedor com texto introdutório
+- [x] Formulário de contato completo (Nome, Email, Telefone, Mensagem)
+- [x] Validação de campos em tempo real
+- [x] Estados de loading, sucesso e erro
+- [x] Informações de contato (Email, Telefone, Endereço)
+- [x] Layout lado a lado (formulário + informações)
+- [x] Links de redes sociais (Instagram, Behance, LinkedIn)
+- [x] CTA final elegante com mensagem inspiradora
+- [x] API route preparada para integração com Resend
+
 ## 📋 Próximas Fases
 
-### 🖼️ Fase 5: Página Portfólio
-- Grid de projetos
-- Filtros por categoria
-- Modal/Detalhe do projeto
-- CTA entre projetos
-
-### 📧 Fase 6: Página Contato
-- Formulário de contato
-- Informações de contato
-- Redes sociais
-- CTA final
+Todas as fases principais foram implementadas! 🎉
 
 ## 🎯 Decisões Técnicas
 

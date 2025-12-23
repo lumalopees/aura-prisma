@@ -12,9 +12,14 @@ export interface Project {
   title: string;
   category: string;
   description: string;
+  fullDescription?: string;
+  challenge?: string;
+  solution?: string;
   image: string;
+  images?: string[];
   client: string;
   year: string;
+  services?: string[];
 }
 
 export interface Testimonial {
