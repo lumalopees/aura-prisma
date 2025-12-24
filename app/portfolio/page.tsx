@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { Metadata } from "next";
 import PortfolioHeader from "@/components/sections/portfolio/PortfolioHeader";
 import PortfolioGrid from "@/components/sections/portfolio/PortfolioGrid";
 import ProjectModal from "@/components/sections/portfolio/ProjectModal";
