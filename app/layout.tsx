@@ -3,6 +3,9 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ToastProvider } from "@/components/ui/Toast";
+import PageTransition from "@/components/transitions/PageTransition";
+import ScrollProgress from "@/components/ui/ScrollProgress";
+import { GoogleAnalytics, Plausible } from "@/components/analytics/Analytics";
 import { defaultMetadata } from "./metadata";
 
 const inter = Inter({
@@ -75,10 +78,17 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <GoogleAnalytics
+          measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
+        />
+        <Plausible domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN} />
         <ToastProvider>
+          <ScrollProgress />
           <div className="flex min-h-screen flex-col">
             <Header />
-            <main className="flex-1">{children}</main>
+            <main className="flex-1">
+              <PageTransition>{children}</PageTransition>
+            </main>
             <Footer />
           </div>
         </ToastProvider>

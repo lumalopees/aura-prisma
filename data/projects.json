@@ -68,5 +68,75 @@
     "client": "Empresa de Serviços",
     "year": "2024",
     "services": ["Posicionamento Digital", "Branding", "Social Media"]
+  },
+  {
+    "id": "project-5",
+    "title": "Naming e Identidade - Food Tech",
+    "category": "branding",
+    "description": "Criação de nome e identidade visual completa para startup de tecnologia alimentar",
+    "fullDescription": "Desenvolvemos desde o naming até a identidade visual completa para uma nova startup no setor de food tech. O projeto envolveu pesquisa de mercado, análise de viabilidade jurídica e criação de uma marca que comunicasse inovação e confiança no setor alimentar.",
+    "challenge": "Criar um nome único e memorável que funcionasse tanto em português quanto em inglês, passasse confiança no setor alimentar e fosse viável juridicamente. Além disso, a identidade visual precisava comunicar tecnologia e naturalidade simultaneamente.",
+    "solution": "Desenvolvemos um processo de naming estruturado que resultou em um nome único e estratégico. A identidade visual combinou elementos tecnológicos sutis com referências orgânicas, criando uma marca que se destaca no mercado food tech. O resultado foi uma marca forte, memorável e pronta para expansão internacional.",
+    "image": "/images/projects/project-5.jpg",
+    "images": [
+      "/images/projects/project-5-1.jpg",
+      "/images/projects/project-5-2.jpg",
+      "/images/projects/project-5-3.jpg"
+    ],
+    "client": "Food Tech Startup",
+    "year": "2024",
+    "services": ["Branding", "Naming", "Identidade Visual"]
+  },
+  {
+    "id": "project-6",
+    "title": "Reposicionamento de Marca - Fintech",
+    "category": "posicionamento-digital",
+    "description": "Reposicionamento estratégico e comunicação digital para fintech em expansão",
+    "fullDescription": "Trabalhamos no reposicionamento completo de uma fintech que buscava expandir seus serviços e atrair novos segmentos de clientes. O projeto incluiu estratégia de posicionamento, comunicação digital e implementação em múltiplos canais.",
+    "challenge": "A marca precisava comunicar segurança e inovação ao mesmo tempo, atrair tanto público jovem quanto tradicional, e diferenciar-se em um mercado altamente competitivo e regulado.",
+    "solution": "Desenvolvemos uma estratégia de posicionamento que equilibrava confiança e inovação. Criamos diretrizes de comunicação claras, implementamos estratégia de conteúdo que educava e engajava, e desenvolvemos campanhas que conectavam com diferentes públicos. O resultado foi aumento na aquisição de clientes e fortalecimento da percepção da marca como inovadora e confiável.",
+    "image": "/images/projects/project-6.jpg",
+    "images": [
+      "/images/projects/project-6-1.jpg",
+      "/images/projects/project-6-2.jpg"
+    ],
+    "client": "Fintech",
+    "year": "2024",
+    "services": ["Posicionamento Digital", "Branding", "Social Media"]
+  },
+  {
+    "id": "project-7",
+    "title": "Identidade Visual e Embalagens - Produtos Naturais",
+    "category": "identidade-visual",
+    "description": "Criação de identidade visual e sistema de embalagens para linha de produtos naturais",
+    "fullDescription": "Desenvolvemos a identidade visual completa e sistema de embalagens para uma nova linha de produtos naturais. O projeto incluiu desde o logo até aplicações em diferentes formatos de embalagem, materiais promocionais e comunicação digital.",
+    "challenge": "Criar uma identidade que transmitisse naturalidade e premium ao mesmo tempo, funcionasse em diferentes formatos de embalagem, e se destacasse nas prateleiras sem parecer genérica ou excessivamente minimalista.",
+    "solution": "Desenvolvemos um sistema visual rico e versátil, com paleta de cores inspirada na natureza, ilustrações customizadas e tipografia que equilibrava elegância e legibilidade. O sistema de embalagens foi pensado para funcionar em diferentes formatos mantendo consistência visual. O resultado foi uma identidade que se destaca nas prateleiras e comunica os valores da marca de forma clara.",
+    "image": "/images/projects/project-7.jpg",
+    "images": [
+      "/images/projects/project-7-1.jpg",
+      "/images/projects/project-7-2.jpg",
+      "/images/projects/project-7-3.jpg"
+    ],
+    "client": "Marca de Produtos Naturais",
+    "year": "2024",
+    "services": ["Identidade Visual", "Branding", "Embalagens"]
+  },
+  {
+    "id": "project-8",
+    "title": "Estratégia de Conteúdo - EdTech",
+    "category": "social-media",
+    "description": "Estratégia completa de conteúdo e social media para plataforma de educação online",
+    "fullDescription": "Criamos e implementamos uma estratégia completa de conteúdo e social media para uma plataforma de educação online. O projeto incluiu desenvolvimento de tom de voz, calendário editorial, criação de conteúdo e gestão das redes sociais.",
+    "challenge": "A plataforma precisava comunicar autoridade educacional mantendo um tom acessível e engajador, atrair diferentes públicos (estudantes, educadores, pais) e gerar conversões sem parecer comercial demais.",
+    "solution": "Desenvolvemos uma estratégia de conteúdo educacional que posicionava a marca como autoridade, criamos diferentes formatos de conteúdo para diferentes públicos, e implementamos campanhas que educavam e convertiam. O resultado foi aumento significativo no engajamento, crescimento da comunidade e aumento nas conversões.",
+    "image": "/images/projects/project-8.jpg",
+    "images": [
+      "/images/projects/project-8-1.jpg",
+      "/images/projects/project-8-2.jpg"
+    ],
+    "client": "Plataforma EdTech",
+    "year": "2024",
+    "services": ["Social Media", "Estratégia de Conteúdo", "Posicionamento Digital"]
   }
 ]

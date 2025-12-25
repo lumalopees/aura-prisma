@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { ButtonHTMLAttributes, ReactNode } from "react";
+import { motion } from "framer-motion";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline" | "ghost";
@@ -40,10 +43,20 @@ export default function Button({
 
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
 
+  const buttonContent = (
+    <motion.span
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      className="inline-block"
+    >
+      {children}
+    </motion.span>
+  );
+
   if (asLink && href) {
     return (
       <Link href={href} className={classes}>
-        {children}
+        {buttonContent}
       </Link>
     );
   }
@@ -52,15 +65,20 @@ export default function Button({
   if (href && !asLink) {
     return (
       <Link href={href} className={classes}>
-        {children}
+        {buttonContent}
       </Link>
     );
   }
 
   return (
-    <button className={classes} {...props}>
+    <motion.button
+      className={classes}
+      whileHover={{ scale: 1.02 }}
+      whileTap={{ scale: 0.98 }}
+      {...props}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 }
 

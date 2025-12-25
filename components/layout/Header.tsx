@@ -1,10 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { href: "/", label: "Home" },
@@ -15,7 +28,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur-sm">
+    <header
+      className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/95 backdrop-blur-md shadow-sm border-neutral-200"
+          : "bg-white/80 backdrop-blur-sm border-neutral-200"
+      }`}
+    >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -29,9 +48,21 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-medium text-neutral-700 transition-colors hover:text-neutral-900"
+                className={`relative text-sm font-medium transition-colors hover:text-neutral-900 ${
+                  pathname === item.href
+                    ? "text-neutral-900"
+                    : "text-neutral-700"
+                }`}
               >
                 {item.label}
+                {pathname === item.href && (
+                  <motion.span
+                    layoutId="activeTab"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600"
+                    initial={false}
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                )}
               </Link>
             ))}
           </div>

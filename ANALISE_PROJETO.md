@@ -132,10 +132,10 @@
 
 ### ⭐ **PARA IMPRESSIONAR (Importante)**
 
-- [ ] **Mais 2-4 projetos no portfólio (total 6-8)**
-- [ ] **Transições de página mais suaves**
-- [ ] **Microinterações adicionais**
-- [ ] **Analytics básico configurado**
+- [x] **Mais 2-4 projetos no portfólio (total 6-8)** ✅ 8 projetos implementados
+- [x] **Transições de página mais suaves** ✅ PageTransition component com AnimatePresence
+- [x] **Microinterações adicionais** ✅ Hover effects, parallax, scroll progress, indicador de página ativa
+- [x] **Analytics básico configurado** ✅ Google Analytics 4 e Plausible Analytics
 
 ### 💎 **DIFERENCIAIS (Nice to have)**
 
