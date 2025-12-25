@@ -1,27 +1,26 @@
 [
   {
     "id": "startups",
-    "title": "Startups",
-    "description": "Branding estratégico para empresas em fase inicial que precisam se posicionar com clareza desde o início.",
+    "title": "Startups e Tecnologia",
+    "description": "Branding estratégico para empresas em fase inicial que precisam se posicionar com clareza desde o início. Ajudamos startups a construírem marcas que atraem investidores, talentos e clientes, criando uma base sólida para o crescimento.",
     "services": ["Branding", "Identidade Visual", "Posicionamento Digital"]
   },
   {
     "id": "ecommerce",
-    "title": "E-commerce",
-    "description": "Criamos marcas que se destacam no ambiente digital e conectam com o público certo.",
-    "services": ["Branding", "Social Media", "Posicionamento Digital"]
+    "title": "E-commerce e Varejo Digital",
+    "description": "Criamos marcas que se destacam no ambiente digital e conectam genuinamente com o público certo. Desenvolvemos estratégias de branding e comunicação que aumentam conversão, fidelização e reconhecimento da marca no competitivo mercado digital.",
+    "services": ["Branding", "Social Media", "Posicionamento Digital", "Identidade Visual"]
   },
   {
     "id": "servicos",
-    "title": "Serviços",
-    "description": "Posicionamento e comunicação que transmitem credibilidade e geram confiança.",
-    "services": ["Branding", "Identidade Visual", "Social Media"]
+    "title": "Serviços Profissionais",
+    "description": "Posicionamento e comunicação que transmitem credibilidade, expertise e confiança. Trabalhamos com empresas de serviços que precisam comunicar seu diferencial de forma clara, atraindo clientes qualificados e construindo autoridade no mercado.",
+    "services": ["Branding", "Identidade Visual", "Posicionamento Digital", "Social Media"]
   },
   {
     "id": "lifestyle",
-    "title": "Lifestyle",
-    "description": "Marcas autênticas que expressam valores e criam conexão emocional com o público.",
-    "services": ["Branding", "Identidade Visual", "Social Media"]
+    "title": "Lifestyle e Consumo",
+    "description": "Marcas autênticas que expressam valores e criam conexão emocional profunda com o público. Desenvolvemos identidades visuais e estratégias de comunicação para marcas que querem ir além do produto, criando uma comunidade e um estilo de vida ao redor da marca.",
+    "services": ["Branding", "Identidade Visual", "Social Media", "Posicionamento Digital"]
   }
 ]
-

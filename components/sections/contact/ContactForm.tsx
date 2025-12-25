@@ -4,9 +4,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import { useToast } from "@/components/ui/Toast";
 import contactData from "@/data/contact.json";
 
 export default function ContactForm() {
+  const { showSuccess, showError } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -64,10 +66,13 @@ export default function ContactForm() {
       });
 
       if (!response.ok) {
-        throw new Error("Erro ao enviar mensagem");
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.error || "Erro ao enviar mensagem");
       }
 
+      const data = await response.json();
       setSubmitStatus("success");
+      showSuccess("Mensagem enviada com sucesso! Entraremos em contato em breve.");
       setFormData({ name: "", email: "", phone: "", message: "" });
       setErrors({});
 
@@ -75,6 +80,11 @@ export default function ContactForm() {
       setTimeout(() => setSubmitStatus("idle"), 5000);
     } catch (error) {
       setSubmitStatus("error");
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Ocorreu um erro ao enviar. Tente novamente.";
+      showError(errorMessage);
       setTimeout(() => setSubmitStatus("idle"), 5000);
     } finally {
       setIsSubmitting(false);

@@ -2,6 +2,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import { ToastProvider } from "@/components/ui/Toast";
 import { defaultMetadata } from "./metadata";
 
 const inter = Inter({
@@ -74,11 +75,13 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div className="flex min-h-screen flex-col">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <ToastProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </ToastProvider>
       </body>
     </html>
   );

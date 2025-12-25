@@ -1,17 +1,9 @@
 [
   {
     "id": "person-1",
-    "name": "Nome da Pessoa",
-    "role": "Diretora Criativa",
-    "bio": "Especialista em branding e identidade visual com mais de 10 anos de experiência.",
+    "name": "Equipe Aura Prisma",
+    "role": "Time Criativo",
+    "bio": "Somos um time multidisciplinar de criativos, estrategistas e designers apaixonados por criar marcas autênticas. Cada membro traz expertise única, mas compartilhamos o mesmo compromisso: transformar ideias em identidades que geram impacto real.",
     "image": "/images/team/person-1.jpg"
-  },
-  {
-    "id": "person-2",
-    "name": "Nome da Pessoa",
-    "role": "Estrategista de Marca",
-    "bio": "Apaixonada por transformar desafios de marca em oportunidades de crescimento.",
-    "image": "/images/team/person-2.jpg"
   }
 ]
-

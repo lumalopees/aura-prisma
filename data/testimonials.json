@@ -1,0 +1,27 @@
+[
+  {
+    "id": "testimonial-1",
+    "name": "Maria Silva",
+    "role": "CEO",
+    "company": "TechStart",
+    "text": "O trabalho do Aura Prisma transformou completamente nossa marca. A estratégia de branding que desenvolveram não apenas melhorou nosso posicionamento, mas também aumentou significativamente nosso reconhecimento no mercado. Profissionais excepcionais!",
+    "image": "/images/testimonials/maria-silva.jpg"
+  },
+  {
+    "id": "testimonial-2",
+    "name": "João Santos",
+    "role": "Diretor de Marketing",
+    "company": "Lifestyle Co",
+    "text": "A identidade visual criada superou todas as nossas expectativas. Cada elemento foi pensado estrategicamente e o resultado é uma marca que realmente representa nossos valores. O processo foi colaborativo e os resultados, impressionantes.",
+    "image": "/images/testimonials/joao-santos.jpg"
+  },
+  {
+    "id": "testimonial-3",
+    "name": "Ana Costa",
+    "role": "Fundadora",
+    "company": "E-commerce Fashion",
+    "text": "A estratégia de social media desenvolvida pelo Aura Prisma foi fundamental para nosso crescimento. Conseguimos aumentar nosso engajamento em mais de 300% e criar uma comunidade verdadeiramente engajada. Recomendo sem hesitação!",
+    "image": "/images/testimonials/ana-costa.jpg"
+  }
+]
+

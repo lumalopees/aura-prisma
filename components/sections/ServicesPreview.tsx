@@ -1,14 +1,35 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
+import ServiceCardSkeleton from "@/components/ui/ServiceCardSkeleton";
 import servicesData from "@/data/services.json";
 import { Service } from "@/types";
 
 export default function ServicesPreview() {
+  const [isLoading] = useState(false); // Simula loading quando necessário
   const services = servicesData as Service[];
+
+  if (isLoading) {
+    return (
+      <section className="py-20 sm:py-24 lg:py-32">
+        <Container>
+          <div className="mb-12 text-center">
+            <div className="mb-4 mx-auto h-10 w-48 animate-pulse rounded bg-neutral-200" />
+            <div className="mx-auto h-6 w-96 animate-pulse rounded bg-neutral-200" />
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[...Array(4)].map((_, i) => (
+              <ServiceCardSkeleton key={i} />
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="py-20 sm:py-24 lg:py-32">
@@ -62,4 +83,3 @@ export default function ServicesPreview() {
     </section>
   );
 }
-

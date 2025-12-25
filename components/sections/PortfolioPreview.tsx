@@ -1,14 +1,35 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
+import ProjectCardSkeleton from "@/components/ui/ProjectCardSkeleton";
 import projectsData from "@/data/projects.json";
 import { Project } from "@/types";
 
 export default function PortfolioPreview() {
+  const [isLoading] = useState(false); // Simula loading quando necessário
   const projects = (projectsData as Project[]).slice(0, 4);
+
+  if (isLoading) {
+    return (
+      <section className="py-20 sm:py-24 lg:py-32">
+        <Container>
+          <div className="mb-12">
+            <div className="mb-4 h-10 w-64 animate-pulse rounded bg-neutral-200" />
+            <div className="h-6 w-96 animate-pulse rounded bg-neutral-200" />
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {[...Array(4)].map((_, i) => (
+              <ProjectCardSkeleton key={i} />
+            ))}
+          </div>
+        </Container>
+      </section>
+    );
+  }
 
   return (
     <section className="py-20 sm:py-24 lg:py-32">
@@ -23,7 +44,7 @@ export default function PortfolioPreview() {
             </p>
           </div>
           <div className="hidden sm:block">
-            <Button href="/portfolio" variant="outline">
+            <Button href="/portfolio" variant="outline" asLink>
               Ver todos
             </Button>
           </div>
@@ -38,7 +59,7 @@ export default function PortfolioPreview() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link href={`/portfolio/${project.id}`}>
+              <Link href={`/portfolio#${project.id}`}>
                 <div className="group relative overflow-hidden rounded-lg bg-neutral-100 aspect-[4/3]">
                   {/* Placeholder para imagem - será substituído quando houver imagens reais */}
                   <div className="flex h-full items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200">
@@ -70,7 +91,7 @@ export default function PortfolioPreview() {
         </div>
 
         <div className="mt-8 text-center sm:hidden">
-          <Button href="/portfolio" variant="outline" size="lg">
+          <Button href="/portfolio" variant="outline" size="lg" asLink>
             Ver todos os projetos
           </Button>
         </div>
@@ -78,4 +99,3 @@ export default function PortfolioPreview() {
     </section>
   );
 }
-

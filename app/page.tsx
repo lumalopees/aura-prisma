@@ -4,7 +4,8 @@ import ServicesPreview from "@/components/sections/ServicesPreview";
 import SocialProof from "@/components/sections/SocialProof";
 import PortfolioPreview from "@/components/sections/PortfolioPreview";
 import Segments from "@/components/sections/Segments";
-import ContactForm from "@/components/sections/ContactForm";
+import Testimonials from "@/components/sections/Testimonials";
+import ContactForm from "@/components/sections/contact/ContactForm";
 import { generatePageMetadata } from "@/components/seo/PageMetadata";
 
 export const metadata: Metadata = generatePageMetadata({
@@ -22,6 +23,7 @@ export default function Home() {
       <SocialProof />
       <PortfolioPreview />
       <Segments />
+      <Testimonials />
       <ContactForm />
     </>
   );

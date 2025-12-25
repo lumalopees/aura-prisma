@@ -2,54 +2,60 @@
   {
     "id": "branding",
     "title": "Branding",
-    "shortDescription": "Construção de marcas autênticas e estratégicas",
-    "description": "Desenvolvemos estratégias de marca que conectam sua essência com seu público, criando uma comunicação sólida e autêntica.",
-    "targetAudience": "Para empresas que desejam construir uma comunicação sólida e autêntica",
+    "shortDescription": "Estratégia de marca que conecta sua essência com seu público",
+    "description": "Desenvolvemos estratégias de marca profundas que vão além da estética. Através de imersão, pesquisa e análise, criamos marcas autênticas que se conectam genuinamente com o público, gerando reconhecimento, lembrança e fidelidade. Cada decisão é fundamentada em dados e insights estratégicos.",
+    "targetAudience": "Para empresas que buscam construir ou reposicionar sua marca com estratégia, autenticidade e propósito claro",
     "deliverables": [
       "Imersão e DNA Empresarial",
-      "Estudo de Mercado e Público",
-      "Arquitetura de Marca",
-      "Diretrizes de Comunicação e Estratégia de Marca"
+      "Pesquisa de Mercado e Público-alvo",
+      "Arquitetura de Marca e Posicionamento",
+      "Diretrizes de Comunicação e Tom de Voz",
+      "Estratégia de Branding Completa"
     ]
   },
   {
     "id": "identidade-visual",
     "title": "Identidade Visual",
-    "shortDescription": "Transformamos a essência da sua marca em identidade visual única",
-    "description": "Criamos identidades visuais autênticas, expressivas e consistentes que geram reconhecimento e diferenciação.",
-    "targetAudience": "Para empresas que precisam de uma marca autêntica, expressiva e consistente",
+    "shortDescription": "Identidade visual única que expressa a personalidade da sua marca",
+    "description": "Transformamos a essência estratégica da sua marca em uma identidade visual memorável e consistente. Criamos sistemas visuais completos que funcionam em todos os pontos de contato, desde o logo até aplicações em embalagens, materiais digitais e físicos. Cada elemento é pensado para reforçar a personalidade e os valores da marca.",
+    "targetAudience": "Para empresas que precisam de uma identidade visual profissional, expressiva e que se destaque no mercado",
     "deliverables": [
-      "Marca gráfica e submarcas",
-      "Sistema visual e ilustrações",
-      "Diretrizes de comunicação visual",
-      "Animações e 3D"
+      "Logo e variações",
+      "Sistema de cores e tipografia",
+      "Biblioteca de elementos visuais",
+      "Diretrizes de aplicação (Brand Guidelines)",
+      "Aplicações em diferentes suportes",
+      "Animações e elementos 3D (quando aplicável)"
     ]
   },
   {
     "id": "social-media",
     "title": "Social Media",
-    "shortDescription": "Estratégia e conteúdo para suas redes sociais",
-    "description": "Desenvolvemos estratégias de social media que fortalecem a identidade da marca e geram engajamento autêntico.",
-    "targetAudience": "Para empresas que querem fortalecer sua presença digital nas redes sociais",
+    "shortDescription": "Estratégia e criação de conteúdo para fortalecer sua presença digital",
+    "description": "Desenvolvemos estratégias de social media que vão além de posts bonitos. Criamos conteúdo que conta histórias, engaja audiências e fortalece a conexão emocional com sua marca. Nossa abordagem combina criatividade, dados e conhecimento do comportamento do consumidor para gerar resultados reais.",
+    "targetAudience": "Para empresas que querem construir uma presença autêntica e engajada nas redes sociais",
     "deliverables": [
-      "Estratégia de conteúdo",
-      "Planejamento editorial",
-      "Criação de conteúdo visual",
-      "Gestão e monitoramento"
+      "Estratégia de conteúdo e calendário editorial",
+      "Criação de conteúdo visual e copy",
+      "Gestão de redes sociais",
+      "Análise de performance e relatórios",
+      "Community management",
+      "Campanhas e ações especiais"
     ]
   },
   {
     "id": "posicionamento-digital",
     "title": "Posicionamento Digital",
-    "shortDescription": "Posicionamento estratégico no ambiente digital",
-    "description": "Ajudamos sua marca a se posicionar de forma clara e consistente no ambiente digital, ampliando seu impacto e alcance.",
-    "targetAudience": "Para empresas que buscam fortalecer sua presença e posicionamento digital",
+    "shortDescription": "Posicionamento estratégico que amplia seu impacto no ambiente digital",
+    "description": "Ajudamos sua marca a se posicionar de forma clara, consistente e relevante no ambiente digital. Através de análise de mercado, concorrência e oportunidades, criamos estratégias de posicionamento que diferenciam sua marca e ampliam seu alcance, gerando autoridade e conexão com o público certo.",
+    "targetAudience": "Para empresas que buscam fortalecer sua presença digital e se destacar no mercado online",
     "deliverables": [
-      "Estratégia de posicionamento",
-      "Análise de concorrência",
-      "Plano de comunicação digital",
-      "Diretrizes de tom e voz"
+      "Análise de mercado e concorrência",
+      "Estratégia de posicionamento digital",
+      "Plano de comunicação integrada",
+      "Diretrizes de tom e voz",
+      "Estratégia de conteúdo multiplataforma",
+      "Mapeamento de oportunidades digitais"
     ]
   }
 ]
-
