@@ -29,7 +29,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         : "light";
       const initialTheme = savedTheme || systemTheme;
       setTheme(initialTheme);
-      document.documentElement.classList.toggle("dark", initialTheme === "dark");
+      
+      // Remover classe dark se existir e adicionar conforme necessário
+      if (initialTheme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
     }
   }, []);
 
@@ -38,7 +44,13 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
-    document.documentElement.classList.toggle("dark", newTheme === "dark");
+    
+    // Remover ou adicionar classe dark explicitamente
+    if (newTheme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   };
 
   return (
