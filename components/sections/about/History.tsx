@@ -11,7 +11,7 @@ export default function History() {
     <section className="py-20 sm:py-24 lg:py-32">
       <Container>
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-16">
-          {/* Imagem - Placeholder */}
+          {/* Imagem representativa da história do estúdio - placeholder até imagem real ser adicionada */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}

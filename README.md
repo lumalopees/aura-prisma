@@ -9,6 +9,10 @@ Site institucional para estúdio criativo especializado em branding, identidade 
 - **Tailwind CSS** - Estilização utility-first
 - **Framer Motion** - Animações e transições
 - **Resend** - Envio de emails (formulários)
+- **Jest** - Testes unitários
+- **PWA** - Progressive Web App (manifest.json)
+- **i18n** - Internacionalização (pt-BR, es, en)
+- **Dark Mode** - Tema escuro/claro
 
 ## 📁 Estrutura do Projeto
 

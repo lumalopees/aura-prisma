@@ -61,7 +61,7 @@ export default function PortfolioPreview() {
             >
               <Link href={`/portfolio#${project.id}`}>
                 <div className="group relative overflow-hidden rounded-lg bg-neutral-100 aspect-[4/3]">
-                  {/* Placeholder para imagem - será substituído quando houver imagens reais */}
+                  {/* Preview visual do projeto - placeholder até imagens reais serem adicionadas */}
                   <div className="flex h-full items-center justify-center bg-gradient-to-br from-primary-100 to-primary-200">
                     <span className="text-sm font-medium text-primary-700">
                       {project.title}

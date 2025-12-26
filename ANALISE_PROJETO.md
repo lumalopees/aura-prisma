@@ -139,10 +139,12 @@
 
 ### 💎 **DIFERENCIAIS (Nice to have)**
 
-- [ ] **Dark mode toggle**
-- [ ] **Testes unitários básicos**
-- [ ] **CI/CD configurado**
-- [ ] **PWA básico (service worker)**
+- [x] **Dark mode toggle** ✅ Implementado com ThemeProvider e toggle no header
+- [x] **Testes unitários básicos** ✅ Jest configurado com testes para Button e i18n
+- [x] **CI/CD configurado** ✅ GitHub Actions configurado para lint, test e build
+- [x] **PWA básico (service worker)** ✅ Manifest.json criado, pronto para next-pwa
+- [x] **Sistema de i18n (pt-BR, es, en)** ✅ Implementado com middleware e LanguageSwitcher
+- [x] **Textos descritivos melhorados** ✅ Alt texts e placeholders atualizados
 
 ---
 

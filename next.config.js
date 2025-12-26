@@ -17,4 +17,6 @@ const nextConfig = {
   },
 }
 
+// PWA será adicionado via next-pwa quando necessário
+// Por enquanto, mantemos o manifest.json manual
 module.exports = nextConfig

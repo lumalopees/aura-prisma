@@ -38,7 +38,7 @@ export default function ServiceDetail({ service, index }: ServiceDetailProps) {
               {service.title}
             </h2>
 
-            {/* Imagem/Visual - Placeholder (movido para antes da descrição) */}
+            {/* Imagem/Visual representativa do serviço - placeholder até imagens reais serem adicionadas */}
             <div className="mb-6 relative aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br from-primary-100 to-primary-200">
               {/* Quando houver imagens reais, usar:
               <Image

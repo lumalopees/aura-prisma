@@ -1,5 +1,5 @@
 import { Inter, Playfair_Display } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ToastProvider } from "@/components/ui/Toast";
@@ -7,7 +7,8 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 import PageTransition from "@/components/transitions/PageTransition";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import { GoogleAnalytics, Plausible } from "@/components/analytics/Analytics";
-import { defaultMetadata } from "./metadata";
+import { defaultMetadata } from "../metadata";
+import { locales, defaultLocale } from "@/lib/i18n/config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,11 +26,19 @@ const playfair = Playfair_Display({
 
 export const metadata = defaultMetadata;
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 export default function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale?: string };
 }>) {
+  const locale = (params?.locale as string) || defaultLocale;
+
   const organizationData = {
     name: "Aura Prisma",
     url: process.env.NEXT_PUBLIC_SITE_URL || "https://auraprisma.com",
@@ -55,7 +64,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <script
           type="application/ld+json"

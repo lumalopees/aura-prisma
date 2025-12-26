@@ -24,7 +24,7 @@ export default function ProjectCard({
       onClick={onClick}
     >
       <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br from-primary-100 to-primary-200 mb-4">
-        {/* Placeholder para imagem - será substituído quando houver imagens reais */}
+        {/* Imagem do projeto - placeholder visual até imagens reais serem adicionadas */}
         <div className="flex h-full items-center justify-center">
           <span className="text-lg font-display font-bold text-primary-700">
             {project.title}

@@ -104,7 +104,7 @@ export default function ProjectModal({
             <div className="p-6">
               {/* Galeria de Imagens */}
               <div className="relative mb-8 aspect-video overflow-hidden rounded-lg bg-neutral-100">
-                {/* Placeholder para imagem */}
+                {/* Galeria de imagens do projeto - placeholder até imagens reais serem adicionadas */}
                 <div className="flex h-full items-center justify-center">
                   <span className="text-xl font-display font-bold text-primary-700">
                     {project.title} - Imagem {currentImageIndex + 1}

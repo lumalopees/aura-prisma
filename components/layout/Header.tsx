@@ -4,11 +4,13 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,59 +22,66 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { href: "/", label: "Home" },
-    { href: "/sobre", label: "Sobre" },
-    { href: "/servicos", label: "Serviços" },
-    { href: "/portfolio", label: "Portfólio" },
-    { href: "/contato", label: "Contato" },
+    { href: "/", label: t.nav.home },
+    { href: "/sobre", label: t.nav.about },
+    { href: "/servicos", label: t.nav.services },
+    { href: "/portfolio", label: t.nav.portfolio },
+    { href: "/contato", label: t.nav.contact },
   ];
 
   return (
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-sm border-neutral-200"
-          : "bg-white/80 backdrop-blur-sm border-neutral-200"
+          ? "bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md shadow-sm border-neutral-200 dark:border-neutral-800"
+          : "bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-neutral-200 dark:border-neutral-800"
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-xl font-display font-bold text-neutral-900">
+          <Link
+            href="/"
+            className="text-xl font-display font-bold text-neutral-900 dark:text-white"
+          >
             Aura Prisma
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex md:items-center md:space-x-8">
+          <div className="hidden md:flex md:items-center md:space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative text-sm font-medium transition-colors hover:text-neutral-900 ${
+                className={`relative text-sm font-medium transition-colors hover:text-neutral-900 dark:hover:text-white ${
                   pathname === item.href
-                    ? "text-neutral-900"
-                    : "text-neutral-700"
+                    ? "text-neutral-900 dark:text-white"
+                    : "text-neutral-700 dark:text-neutral-300"
                 }`}
               >
                 {item.label}
                 {pathname === item.href && (
                   <motion.span
                     layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600 dark:bg-primary-400"
                     initial={false}
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
               </Link>
             ))}
+            <LanguageSwitcher />
+            <ThemeToggle />
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+              className="text-neutral-700 dark:text-neutral-300"
+            >
             <svg
               className="h-6 w-6"
               fill="none"
@@ -88,7 +97,8 @@ export default function Header() {
                 <path d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
-          </button>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
