@@ -4,7 +4,11 @@ import Link from "next/link";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { motion } from "framer-motion";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps
+  extends Omit<
+    ButtonHTMLAttributes<HTMLButtonElement>,
+    "onDrag" | "onDragStart" | "onDragEnd" | "onAnimationStart" | "onAnimationEnd"
+  > {
   variant?: "primary" | "secondary" | "outline" | "ghost";
   size?: "sm" | "md" | "lg";
   asLink?: boolean;
@@ -70,12 +74,22 @@ export default function Button({
     );
   }
 
+  // Separar props que podem conflitar com Framer Motion
+  const {
+    onDrag,
+    onDragStart,
+    onDragEnd,
+    onAnimationStart,
+    onAnimationEnd,
+    ...restProps
+  } = props;
+
   return (
     <motion.button
       className={classes}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      {...props}
+      {...(restProps as any)}
     >
       {children}
     </motion.button>
