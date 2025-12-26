@@ -74,22 +74,12 @@ export default function Button({
     );
   }
 
-  // Separar props que podem conflitar com Framer Motion
-  const {
-    onDrag,
-    onDragStart,
-    onDragEnd,
-    onAnimationStart,
-    onAnimationEnd,
-    ...restProps
-  } = props;
-
   return (
     <motion.button
       className={classes}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
-      {...(restProps as any)}
+      {...(props as any)}
     >
       {children}
     </motion.button>
