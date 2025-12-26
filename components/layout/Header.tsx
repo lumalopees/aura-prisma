@@ -10,7 +10,6 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
-  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,11 +21,11 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { href: "/", label: t.nav.home },
-    { href: "/sobre", label: t.nav.about },
-    { href: "/servicos", label: t.nav.services },
-    { href: "/portfolio", label: t.nav.portfolio },
-    { href: "/contato", label: t.nav.contact },
+    { href: "/", label: "Home" },
+    { href: "/sobre", label: "Sobre" },
+    { href: "/servicos", label: "Serviços" },
+    { href: "/portfolio", label: "Portfólio" },
+    { href: "/contato", label: "Contato" },
   ];
 
   return (
@@ -70,7 +69,6 @@ export default function Header() {
                 )}
               </Link>
             ))}
-            <LanguageSwitcher />
             <ThemeToggle />
           </div>
 
