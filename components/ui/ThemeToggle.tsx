@@ -2,9 +2,21 @@
 
 import { useTheme } from "./ThemeProvider";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
   const { theme, toggleTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return (
+      <div className="h-10 w-10 rounded-full border border-neutral-300 bg-white dark:border-neutral-700 dark:bg-neutral-800" />
+    );
+  }
 
   return (
     <button
