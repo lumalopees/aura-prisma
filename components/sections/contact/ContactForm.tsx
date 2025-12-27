@@ -113,14 +113,14 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="mb-6 text-2xl font-display font-bold text-neutral-900">
+            <h2 className="mb-6 text-2xl font-display font-bold text-neutral-900 dark:text-orange-500">
               Envie sua mensagem
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-neutral-700 mb-2"
+                  className="block text-sm font-medium text-neutral-700 dark:text-white mb-2"
                 >
                   Nome *
                 </label>
@@ -145,7 +145,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-neutral-700 mb-2"
+                  className="block text-sm font-medium text-neutral-700 dark:text-white mb-2"
                 >
                   Email *
                 </label>
@@ -170,7 +170,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium text-neutral-700 mb-2"
+                  className="block text-sm font-medium text-neutral-700 dark:text-white mb-2"
                 >
                   Telefone *
                 </label>
@@ -195,7 +195,7 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-neutral-700 mb-2"
+                  className="block text-sm font-medium text-neutral-700 dark:text-white mb-2"
                 >
                   Mensagem *
                 </label>
@@ -250,7 +250,7 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="mb-6 text-2xl font-display font-bold text-neutral-900">
+            <h2 className="mb-6 text-2xl font-display font-bold text-neutral-900 dark:text-orange-500">
               Informações de contato
             </h2>
             <div className="space-y-6">
@@ -269,12 +269,12 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="mb-1 text-sm font-semibold text-neutral-900">
+                  <h3 className="mb-1 text-sm font-semibold text-neutral-900 dark:text-orange-500">
                     Email
                   </h3>
                   <a
                     href={`mailto:${contactData.email}`}
-                    className="text-neutral-600 transition-colors hover:text-primary-600"
+                    className="text-neutral-600 transition-colors hover:text-orange-600 dark:text-white dark:hover:text-orange-400"
                   >
                     {contactData.email}
                   </a>
@@ -296,12 +296,12 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="mb-1 text-sm font-semibold text-neutral-900">
+                  <h3 className="mb-1 text-sm font-semibold text-neutral-900 dark:text-orange-500">
                     Telefone
                   </h3>
                   <a
                     href={`tel:${contactData.phone.replace(/\s/g, "")}`}
-                    className="text-neutral-600 transition-colors hover:text-primary-600"
+                    className="text-neutral-600 transition-colors hover:text-orange-600 dark:text-white dark:hover:text-orange-400"
                   >
                     {contactData.phone}
                   </a>
@@ -324,16 +324,16 @@ export default function ContactForm() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="mb-1 text-sm font-semibold text-neutral-900">
+                  <h3 className="mb-1 text-sm font-semibold text-neutral-900 dark:text-orange-500">
                     Endereço
                   </h3>
-                  <p className="text-neutral-600">{contactData.address}</p>
+                  <p className="text-neutral-600 dark:text-white">{contactData.address}</p>
                 </div>
               </div>
 
               {/* Redes Sociais */}
               <div className="pt-6 border-t border-neutral-200">
-                <h3 className="mb-4 text-sm font-semibold text-neutral-900">
+                <h3 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-orange-500">
                   Redes Sociais
                 </h3>
                 <div className="flex gap-4">
@@ -341,7 +341,7 @@ export default function ContactForm() {
                     href={contactData.social.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-primary-100 hover:text-primary-600"
+                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-orange-100 hover:text-orange-600 dark:hover:bg-orange-900/20 dark:hover:text-orange-400"
                     aria-label="Instagram"
                   >
                     <svg
@@ -356,7 +356,7 @@ export default function ContactForm() {
                     href={contactData.social.behance}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-primary-100 hover:text-primary-600"
+                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-orange-100 hover:text-orange-600 dark:hover:bg-orange-900/20 dark:hover:text-orange-400"
                     aria-label="Behance"
                   >
                     <svg
@@ -371,7 +371,7 @@ export default function ContactForm() {
                     href={contactData.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-primary-100 hover:text-primary-600"
+                    className="flex h-10 w-10 items-center justify-center rounded-lg bg-neutral-100 text-neutral-600 transition-colors hover:bg-orange-100 hover:text-orange-600 dark:hover:bg-orange-900/20 dark:hover:text-orange-400"
                     aria-label="LinkedIn"
                   >
                     <svg

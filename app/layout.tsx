@@ -96,7 +96,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white transition-colors duration-200">
+      <body className="bg-primary-100 text-neutral-900 dark:text-white transition-colors duration-200 dark:bg-[#440756]">
         <GoogleAnalytics
           measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}
         />

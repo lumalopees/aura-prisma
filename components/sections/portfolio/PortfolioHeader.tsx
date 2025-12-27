@@ -21,7 +21,7 @@ export default function PortfolioHeader({
   onFilterChange,
 }: PortfolioHeaderProps) {
   return (
-    <section className="bg-gradient-to-b from-neutral-50 to-white py-20 sm:py-24 lg:py-32">
+    <section className="bg-gradient-to-b from-primary-100 via-primary-100/90 to-primary-200/50 py-20 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800 sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

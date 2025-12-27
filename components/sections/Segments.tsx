@@ -18,13 +18,13 @@ export default function Segments() {
   const segments = segmentsData as Segment[];
 
   return (
-    <section className="bg-neutral-50 py-20 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             Principais segmentos atendidos
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+          <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
             Projetos personalizados para diferentes segmentos de mercado e
             objetivos de negócio
           </p>
@@ -40,17 +40,17 @@ export default function Segments() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card hover className="h-full">
-                <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900">
+                <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900 dark:text-orange-500">
                   {segment.title}
                 </h3>
-                <p className="mb-4 text-sm text-neutral-600">
+                <p className="mb-4 text-sm text-neutral-600 dark:text-white">
                   {segment.description}
                 </p>
                 <div className="mb-4 flex flex-wrap gap-2">
                   {segment.services.map((service) => (
                     <span
                       key={service}
-                      className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700"
+                      className="rounded-full bg-orange-100 px-3 py-1 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400"
                     >
                       {service}
                     </span>
@@ -58,7 +58,7 @@ export default function Segments() {
                 </div>
                 <Link
                   href={`/portfolio?segment=${segment.id}`}
-                  className="text-sm font-medium text-primary-600 transition-colors hover:text-primary-700"
+                  className="text-sm font-medium text-primary-600 transition-colors hover:text-orange-600 dark:text-white dark:hover:text-orange-400"
                 >
                   Ver projetos neste segmento →
                 </Link>

@@ -10,7 +10,7 @@ export default function Testimonials() {
   const testimonials = testimonialsData as Testimonial[];
 
   return (
-    <section className="bg-neutral-50 py-20 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -19,10 +19,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             O que nossos clientes dizem
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+          <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
             A satisfação dos nossos clientes é nossa maior conquista
           </p>
         </motion.div>
@@ -56,15 +56,15 @@ export default function Testimonials() {
                     </span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-neutral-900">
+                    <h3 className="font-semibold text-neutral-900 dark:text-white">
                       {testimonial.name}
                     </h3>
-                    <p className="text-sm text-neutral-600">
+                    <p className="text-sm text-neutral-600 dark:text-orange-500">
                       {testimonial.role}, {testimonial.company}
                     </p>
                   </div>
                 </div>
-                <div className="mb-4 flex text-primary-600">
+                <div className="mb-4 flex text-orange-500 dark:text-orange-400">
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
@@ -76,7 +76,7 @@ export default function Testimonials() {
                     </svg>
                   ))}
                 </div>
-                <p className="text-neutral-600 leading-relaxed">
+                <p className="text-neutral-600 dark:text-white leading-relaxed">
                   "{testimonial.text}"
                 </p>
               </Card>

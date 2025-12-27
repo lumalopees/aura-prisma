@@ -40,7 +40,7 @@ export default function ProjectCard({
         */}
         <div className="absolute inset-0 bg-neutral-900/0 transition-colors group-hover:bg-neutral-900/20" />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100">
-          <span className="rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900">
+          <span className="rounded-full bg-white px-6 py-3 text-sm font-medium text-neutral-900 shadow-lg group-hover:bg-orange-50 group-hover:text-orange-600 transition-colors">
             Ver projeto
           </span>
         </div>
@@ -54,7 +54,7 @@ export default function ProjectCard({
           {project.services.slice(0, 2).map((service) => (
             <span
               key={service}
-              className="rounded-full bg-primary-50 px-3 py-1 text-xs font-medium text-primary-700"
+              className="rounded-full bg-orange-100 px-3 py-1 text-xs font-medium text-orange-700 dark:bg-orange-900/30 dark:text-orange-400"
             >
               {service}
             </span>

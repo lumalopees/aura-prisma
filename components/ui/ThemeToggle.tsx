@@ -14,14 +14,14 @@ export default function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="h-10 w-10 rounded-full border border-neutral-300 bg-white dark:border-neutral-700 dark:bg-neutral-800" />
+      <div className="h-10 w-10 rounded-full border border-primary-600 bg-primary-100 dark:border-orange-500 dark:bg-neutral-800" />
     );
   }
 
   return (
     <button
       onClick={toggleTheme}
-      className="relative flex h-10 w-10 items-center justify-center rounded-full border border-neutral-300 bg-white transition-colors hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-800 dark:hover:bg-neutral-700"
+      className="relative flex h-10 w-10 items-center justify-center rounded-full border border-primary-600 bg-primary-100 transition-colors hover:bg-primary-200 dark:border-orange-500 dark:bg-neutral-800 dark:hover:bg-neutral-700"
       aria-label="Toggle theme"
     >
       <motion.div

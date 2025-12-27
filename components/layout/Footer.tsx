@@ -17,15 +17,15 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="border-t border-neutral-200 bg-neutral-50">
+    <footer className="border-t border-primary-200 bg-primary-100/50 dark:bg-[#3a0849] dark:border-neutral-700">
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <h3 className="mb-4 text-lg font-display font-bold text-neutral-900">
+            <h3 className="mb-4 text-lg font-display font-bold text-neutral-900 dark:text-orange-500">
               Aura Prisma
             </h3>
-            <p className="text-sm text-neutral-600">
+            <p className="text-sm text-neutral-600 dark:text-white">
               Estúdio criativo especializado em branding, identidade visual,
               social media e posicionamento digital.
             </p>
@@ -33,7 +33,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold text-neutral-900">
+            <h4 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-orange-500">
               Navegação
             </h4>
             <ul className="space-y-2">
@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-neutral-600 transition-colors hover:text-neutral-900"
+                    className="text-sm text-neutral-600 dark:text-white transition-colors hover:text-neutral-900 dark:hover:text-orange-400"
                   >
                     {item.label}
                   </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold text-neutral-900">
+            <h4 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-orange-500">
               Redes Sociais
             </h4>
             <ul className="flex space-x-4">
@@ -60,7 +60,7 @@ export default function Footer() {
                 <li key={social.label}>
                   <Link
                     href={social.href}
-                    className="text-neutral-600 transition-colors hover:text-neutral-900"
+                    className="text-neutral-600 dark:text-white transition-colors hover:text-neutral-900 dark:hover:text-orange-400"
                     aria-label={social.label}
                   >
                     <span className="text-sm capitalize">{social.label}</span>
@@ -73,7 +73,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-neutral-200 pt-8">
-          <p className="text-center text-sm text-neutral-600">
+          <p className="text-center text-sm text-neutral-600 dark:text-white">
             © {currentYear} Aura Prisma. Todos os direitos reservados.
           </p>
         </div>

@@ -22,7 +22,7 @@ export default function SocialProof() {
   ];
 
   return (
-    <section className="bg-neutral-50 py-16 sm:py-20">
+    <section className="bg-primary-100/30 py-16 dark:bg-[#3a0849] sm:py-20">
       <Container>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
           {statsItems.map((item, index) => (
@@ -34,10 +34,10 @@ export default function SocialProof() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="text-center"
             >
-              <div className="mb-2 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+              <div className="mb-2 text-3xl font-display font-bold text-neutral-900 dark:text-white sm:text-4xl lg:text-5xl">
                 {item.value}
               </div>
-              <div className="text-sm text-neutral-600 sm:text-base">
+              <div className="text-sm text-neutral-600 dark:text-orange-500 sm:text-base">
                 {item.label}
               </div>
             </motion.div>

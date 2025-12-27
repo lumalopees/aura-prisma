@@ -13,7 +13,12 @@
   }
 
   body {
-    @apply bg-white text-neutral-900 antialiased;
+    @apply bg-primary-100 text-neutral-900 antialiased;
+  }
+  
+  body.dark {
+    @apply text-white;
+    background-color: #440756;
   }
 
   h1, h2, h3, h4, h5, h6 {

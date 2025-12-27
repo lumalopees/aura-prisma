@@ -6,7 +6,7 @@ import Container from "@/components/ui/Container";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-neutral-50 to-white py-20 dark:from-neutral-900 dark:to-neutral-800 sm:py-24 lg:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-b from-primary-100 via-primary-100/90 to-primary-200/50 py-20 dark:from-[#3a0849] dark:via-[#3a0849] dark:to-[#2d0638] sm:py-24 lg:py-32">
       <Container>
         <div className="mx-auto max-w-4xl text-center">
           <motion.h1
@@ -16,7 +16,7 @@ export default function Hero() {
             className="mb-6 text-4xl font-display font-bold leading-tight text-neutral-900 dark:text-white sm:text-5xl lg:text-6xl"
           >
             Toda marca tem algo que{" "}
-            <span className="text-primary-600 dark:text-primary-400">
+            <span className="text-primary-600 dark:text-orange-500">
               só ela pode ser
             </span>
           </motion.h1>
@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Button href="/portfolio" size="lg" variant="primary">
+            <Button href="/portfolio" size="lg" variant="secondary">
               Conheça nosso trabalho
             </Button>
             <Button href="/contato" size="lg" variant="outline">

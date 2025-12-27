@@ -74,7 +74,7 @@ export default function Process() {
   };
 
   return (
-    <section className="bg-neutral-50 py-20 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export default function Process() {
                           {step.step}
                         </span>
                         {/* Ícone pequeno no canto */}
-                        <div className="absolute -bottom-1 -right-1 flex h-8 w-8 items-center justify-center rounded-full bg-white text-primary-600 shadow-md">
+                        <div className="absolute -bottom-1 -right-1 flex h-8 w-8 items-center justify-center rounded-full bg-white text-orange-600 dark:text-orange-400 shadow-md">
                           {getIcon(step.icon)}
                         </div>
                       </div>

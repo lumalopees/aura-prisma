@@ -32,8 +32,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
         isScrolled
-          ? "bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md shadow-sm border-neutral-200 dark:border-neutral-800"
-          : "bg-white/80 dark:bg-neutral-900/80 backdrop-blur-sm border-neutral-200 dark:border-neutral-800"
+          ? "bg-primary-100/95 dark:bg-neutral-900/95 backdrop-blur-md shadow-sm border-primary-300 dark:border-neutral-800"
+          : "bg-primary-100/80 dark:bg-neutral-900/80 backdrop-blur-sm border-primary-300 dark:border-neutral-800"
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,7 +62,7 @@ export default function Header() {
                 {pathname === item.href && (
                   <motion.span
                     layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600 dark:bg-primary-400"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600 dark:bg-orange-500"
                     initial={false}
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />

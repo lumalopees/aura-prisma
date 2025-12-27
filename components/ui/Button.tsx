@@ -30,13 +30,13 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-neutral-900 text-white hover:bg-neutral-800 focus:ring-neutral-900",
+      "bg-neutral-900 text-white hover:bg-neutral-800 focus:ring-neutral-900 dark:bg-orange-500 dark:hover:bg-orange-400 dark:focus:ring-orange-500",
     secondary:
-      "bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-600",
+      "bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-600 dark:bg-orange-500 dark:hover:bg-orange-600 dark:focus:ring-orange-500",
     outline:
-      "border-2 border-neutral-900 text-neutral-900 hover:bg-neutral-900 hover:text-white focus:ring-neutral-900",
+      "border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white focus:ring-primary-600 dark:border-orange-500 dark:text-orange-500 dark:hover:bg-orange-500 dark:hover:text-white dark:focus:ring-orange-500",
     ghost:
-      "text-neutral-700 hover:bg-neutral-100 hover:text-neutral-900 focus:ring-neutral-900",
+      "text-neutral-700 hover:bg-orange-100 hover:text-orange-600 focus:ring-orange-500 dark:text-neutral-300 dark:hover:bg-orange-900/20 dark:hover:text-orange-400",
   };
 
   const sizes = {

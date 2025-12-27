@@ -9,7 +9,7 @@ export default function MissionVision() {
   const { mission, vision, values } = aboutData;
 
   return (
-    <section className="bg-neutral-50 py-20 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
       <Container>
         {/* Missão e Visão */}
         <div className="mb-16 grid gap-8 md:grid-cols-2">
@@ -23,7 +23,7 @@ export default function MissionVision() {
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100">
                   <svg
-                    className="h-6 w-6 text-primary-600"
+                    className="h-6 w-6 text-orange-600 dark:text-orange-400"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -54,7 +54,7 @@ export default function MissionVision() {
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary-100">
                   <svg
-                    className="h-6 w-6 text-primary-600"
+                    className="h-6 w-6 text-orange-600 dark:text-orange-400"
                     fill="none"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -108,7 +108,7 @@ export default function MissionVision() {
                   <div className="mb-4 flex justify-center">
                     <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary-50">
                       <svg
-                        className="h-8 w-8 text-primary-600"
+                        className="h-8 w-8 text-orange-600 dark:text-orange-400"
                         fill="none"
                         strokeLinecap="round"
                         strokeLinejoin="round"

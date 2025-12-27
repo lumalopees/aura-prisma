@@ -15,7 +15,7 @@ export default function Card({
   hover = false,
 }: CardProps) {
   const baseStyles =
-    "rounded-lg border border-neutral-200 bg-white p-6 transition-all duration-200";
+    "rounded-lg border border-neutral-200 bg-white dark:bg-[#81328e] p-6 transition-all duration-200";
 
   if (hover) {
     return (

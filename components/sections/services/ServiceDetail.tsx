@@ -17,8 +17,8 @@ export default function ServiceDetail({ service, index }: ServiceDetailProps) {
     <section
       id={service.id}
       className={`py-20 sm:py-24 lg:py-32 ${
-        isEven ? "bg-white" : "bg-neutral-50"
-      }`}
+        isEven ? "bg-primary-100" : "bg-primary-200/40"
+      } dark:bg-neutral-900`}
     >
       <Container>
         <div
@@ -78,7 +78,7 @@ export default function ServiceDetail({ service, index }: ServiceDetailProps) {
                 {service.deliverables.map((deliverable, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <svg
-                      className="mt-1 h-5 w-5 flex-shrink-0 text-primary-600"
+                      className="mt-1 h-5 w-5 flex-shrink-0 text-orange-600 dark:text-orange-400"
                       fill="none"
                       strokeLinecap="round"
                       strokeLinejoin="round"

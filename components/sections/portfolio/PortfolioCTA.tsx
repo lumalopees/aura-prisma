@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 export default function PortfolioCTA() {
   return (
-    <section className="bg-neutral-50 py-20 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
