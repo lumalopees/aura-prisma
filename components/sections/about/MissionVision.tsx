@@ -34,7 +34,7 @@ export default function MissionVision() {
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-display font-bold text-neutral-900">
+                <h3 className="text-2xl font-display font-bold text-neutral-900 dark:text-orange-500">
                   {mission.title}
                 </h3>
               </div>
@@ -66,7 +66,7 @@ export default function MissionVision() {
                     <path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-display font-bold text-neutral-900">
+                <h3 className="text-2xl font-display font-bold text-neutral-900 dark:text-orange-500">
                   {vision.title}
                 </h3>
               </div>
@@ -120,7 +120,7 @@ export default function MissionVision() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900">
+                  <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900 dark:text-orange-500">
                     {value.title}
                   </h3>
                   <p className="text-sm text-neutral-600 dark:text-white leading-relaxed">
