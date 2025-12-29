@@ -1,9 +1,30 @@
 [
   {
     "id": "person-1",
-    "name": "Equipe Aura Prisma",
-    "role": "Time Criativo",
-    "bio": "Somos um time multidisciplinar de criativos, estrategistas e designers apaixonados por criar marcas autênticas. Cada membro traz expertise única, mas compartilhamos o mesmo compromisso: transformar ideias em identidades que geram impacto real.",
+    "name": "Gestão e Relacionamento",
+    "role": "Gestão de Projetos",
+    "bio": "Responsáveis por coordenar projetos, manter comunicação transparente com clientes e garantir que cada entrega supere expectativas. Nossa missão é criar relacionamentos duradouros baseados em confiança, organização e excelência em cada etapa do processo.",
     "image": "/images/team/person-1.jpg"
+  },
+  {
+    "id": "person-2",
+    "name": "Estratégia e Branding",
+    "role": "Estrategistas",
+    "bio": "Especialistas em posicionamento de marca e estratégia de comunicação. Desenvolvemos planos que conectam marcas ao seu público-alvo de forma autêntica e impactante.",
+    "image": "/images/team/person-2.jpg"
+  },
+  {
+    "id": "person-3",
+    "name": "Design e Identidade Visual",
+    "role": "Designers",
+    "bio": "Criadores visuais que transformam conceitos em identidades visuais memoráveis. Trabalhamos com tipografia, cores e elementos gráficos para construir marcas únicas.",
+    "image": "/images/team/person-3.jpg"
+  },
+  {
+    "id": "person-4",
+    "name": "Social Media e Digital",
+    "role": "Especialistas Digitais",
+    "bio": "Profissionais focados em criar presença digital consistente e engajadora. Desenvolvemos estratégias de conteúdo e gestão de redes sociais que fortalecem a marca.",
+    "image": "/images/team/person-4.jpg"
   }
 ]

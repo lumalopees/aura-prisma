@@ -31,10 +31,10 @@ export default function Team() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             Quem somos
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+          <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
             O time por trás de cada projeto, unindo criatividade, estratégia e
             paixão
           </p>
@@ -65,13 +65,13 @@ export default function Team() {
                     </span>
                   </div>
                 </div>
-                <h3 className="mb-2 text-xl font-display font-semibold text-neutral-900">
+                <h3 className="mb-2 text-xl font-display font-semibold text-neutral-900 dark:text-orange-500">
                   {member.name}
                 </h3>
-                <p className="mb-4 text-sm font-medium text-primary-600">
+                <p className="mb-4 text-sm font-medium text-primary-600 dark:text-white">
                   {member.role}
                 </p>
-                <p className="text-sm text-neutral-600 leading-relaxed">
+                <p className="text-sm text-neutral-600 dark:text-white leading-relaxed">
                   {member.bio}
                 </p>
               </Card>

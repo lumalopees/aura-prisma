@@ -9,7 +9,7 @@ export default function MissionVision() {
   const { mission, vision, values } = aboutData;
 
   return (
-    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         {/* Missão e Visão */}
         <div className="mb-16 grid gap-8 md:grid-cols-2">
@@ -38,7 +38,7 @@ export default function MissionVision() {
                   {mission.title}
                 </h3>
               </div>
-              <p className="text-neutral-600 leading-relaxed">
+              <p className="text-neutral-600 dark:text-white leading-relaxed">
                 {mission.description}
               </p>
             </Card>
@@ -70,7 +70,7 @@ export default function MissionVision() {
                   {vision.title}
                 </h3>
               </div>
-              <p className="text-neutral-600 leading-relaxed">
+              <p className="text-neutral-600 dark:text-white leading-relaxed">
                 {vision.description}
               </p>
             </Card>
@@ -86,10 +86,10 @@ export default function MissionVision() {
             transition={{ duration: 0.6 }}
             className="mb-12 text-center"
           >
-            <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+            <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
               Valores
             </h2>
-            <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+            <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
               Os princípios que guiam nosso trabalho e nossa relação com cada
               projeto
             </p>
@@ -123,7 +123,7 @@ export default function MissionVision() {
                   <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900">
                     {value.title}
                   </h3>
-                  <p className="text-sm text-neutral-600 leading-relaxed">
+                  <p className="text-sm text-neutral-600 dark:text-white leading-relaxed">
                     {value.description}
                   </p>
                 </Card>

@@ -74,7 +74,7 @@ export default function Process() {
   };
 
   return (
-    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -83,10 +83,10 @@ export default function Process() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             Processo de Trabalho
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+          <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
             De um desafio real a uma solução estratégica. Nosso processo é
             colaborativo e adaptado à realidade da sua marca.
           </p>
@@ -106,13 +106,17 @@ export default function Process() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="relative lg:flex lg:items-center"
               >
-                {/* Conteúdo - Alterna lado no desktop */}
+                {/* Conteúdo - Alterna lado no desktop com zigue-zague */}
                 <div
                   className={`lg:w-1/2 ${
                     index % 2 === 0 ? "lg:pr-12" : "lg:ml-auto lg:pl-12"
                   }`}
                 >
-                  <div className="flex items-start gap-6">
+                  <div
+                    className={`flex items-start gap-6 ${
+                      index % 2 !== 0 ? "flex-row-reverse" : ""
+                    }`}
+                  >
                     {/* Número e ícone */}
                     <div className="flex flex-shrink-0 items-center justify-center">
                       <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-primary-600 text-white shadow-lg">
@@ -127,11 +131,15 @@ export default function Process() {
                     </div>
 
                     {/* Texto */}
-                    <div className="flex-1">
-                      <h3 className="mb-2 text-xl font-display font-semibold text-neutral-900">
+                    <div
+                      className={`flex-1 ${
+                        index % 2 !== 0 ? "text-right" : ""
+                      }`}
+                    >
+                      <h3 className="mb-2 text-xl font-display font-semibold text-neutral-900 dark:text-orange-500">
                         {step.title}
                       </h3>
-                      <p className="text-neutral-600 leading-relaxed">
+                      <p className="text-neutral-600 dark:text-white leading-relaxed">
                         {step.description}
                       </p>
                     </div>
