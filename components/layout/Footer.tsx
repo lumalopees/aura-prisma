@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand */}
-          <div>
+          <div className="text-center md:text-left">
             <h3 className="mb-4 text-lg font-display font-bold text-neutral-900 dark:text-orange-500">
               Aura Prisma
             </h3>
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-orange-500">
               Navegação
             </h4>
@@ -51,11 +51,11 @@ export default function Footer() {
           </div>
 
           {/* Social */}
-          <div>
+          <div className="text-center md:text-left">
             <h4 className="mb-4 text-sm font-semibold text-neutral-900 dark:text-orange-500">
               Redes Sociais
             </h4>
-            <ul className="flex space-x-4">
+            <ul className="flex justify-center md:justify-start space-x-4">
               {socialLinks.map((social) => (
                 <li key={social.label}>
                   <Link

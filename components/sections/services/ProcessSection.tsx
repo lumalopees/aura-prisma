@@ -15,7 +15,7 @@ export default function ProcessSection() {
   const steps = processData as ProcessStep[];
 
   return (
-    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,10 +24,10 @@ export default function ProcessSection() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center"
         >
-          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-4 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             Como trabalhamos
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-neutral-600">
+          <p className="mx-auto max-w-2xl text-lg text-neutral-600 dark:text-white">
             Nosso processo é colaborativo e adaptado à realidade da sua marca
           </p>
         </motion.div>
@@ -49,10 +49,10 @@ export default function ProcessSection() {
                   </span>
                 </div>
               </div>
-              <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900">
+              <h3 className="mb-3 text-xl font-display font-semibold text-neutral-900 dark:text-orange-500">
                 {step.title}
               </h3>
-              <p className="text-sm text-neutral-600 leading-relaxed">
+              <p className="text-sm text-neutral-600 dark:text-white leading-relaxed">
                 {step.description}
               </p>
             </motion.div>
