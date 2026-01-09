@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 export default function PortfolioCTA() {
   return (
-    <section className="bg-primary-100/30 py-20 dark:bg-neutral-800 sm:py-24 lg:py-32">
+    <section className="bg-primary-100/30 py-20 dark:bg-[#3a0849] sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,14 +15,14 @@ export default function PortfolioCTA() {
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h2 className="mb-6 text-3xl font-display font-bold text-neutral-900 sm:text-4xl lg:text-5xl">
+          <h2 className="mb-6 text-3xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-4xl lg:text-5xl">
             Tem um projeto em mente?
           </h2>
-          <p className="mb-8 text-lg leading-relaxed text-neutral-600 sm:text-xl">
+          <p className="mb-8 text-lg leading-relaxed text-neutral-600 dark:text-white sm:text-xl">
             Vamos conversar sobre como podemos transformar sua ideia em
             realidade
           </p>
-          <Button href="/contato" variant="primary" size="lg" asLink>
+          <Button href="/contato" variant="secondary" size="lg" asLink>
             Fale com a gente
           </Button>
         </motion.div>

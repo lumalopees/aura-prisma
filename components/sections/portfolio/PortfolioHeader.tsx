@@ -21,7 +21,7 @@ export default function PortfolioHeader({
   onFilterChange,
 }: PortfolioHeaderProps) {
   return (
-    <section className="bg-gradient-to-b from-primary-100 via-primary-100/90 to-primary-200/50 py-20 dark:from-neutral-900 dark:via-neutral-900 dark:to-neutral-800 sm:py-24 lg:py-32">
+    <section className="bg-gradient-to-b from-primary-100 via-primary-100/90 to-primary-200/50 py-20 dark:from-[#3a0849] dark:via-[#3a0849] dark:to-[#2d0638] sm:py-24 lg:py-32">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,10 +29,10 @@ export default function PortfolioHeader({
           transition={{ duration: 0.6 }}
           className="mx-auto max-w-3xl text-center"
         >
-          <h1 className="mb-6 text-4xl font-display font-bold text-neutral-900 sm:text-5xl lg:text-6xl">
+          <h1 className="mb-6 text-4xl font-display font-bold text-neutral-900 dark:text-orange-500 sm:text-5xl lg:text-6xl">
             Portfólio
           </h1>
-          <p className="mb-8 text-lg leading-relaxed text-neutral-600 sm:text-xl">
+          <p className="mb-8 text-lg leading-relaxed text-neutral-600 dark:text-white sm:text-xl">
             Alguns dos projetos que desenvolvemos com paixão e dedicação
           </p>
 
@@ -44,8 +44,8 @@ export default function PortfolioHeader({
                 onClick={() => onFilterChange(category.id)}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
                   activeFilter === category.id
-                    ? "bg-neutral-900 text-white"
-                    : "bg-white text-neutral-700 hover:bg-neutral-100 border border-neutral-200"
+                    ? "bg-primary-600 text-white dark:bg-orange-500 dark:text-white"
+                    : "bg-white text-neutral-700 hover:bg-neutral-100 border border-neutral-200 dark:bg-transparent dark:text-white dark:border-neutral-700 dark:hover:bg-neutral-800"
                 }`}
               >
                 {category.label}
