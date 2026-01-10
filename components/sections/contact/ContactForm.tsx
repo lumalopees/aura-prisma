@@ -130,10 +130,10 @@ export default function ContactForm() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full rounded-lg border px-4 py-3 text-neutral-900 placeholder-neutral-400 transition-colors focus:outline-none focus:ring-2 ${
+                  className={`w-full rounded-lg border px-4 py-3 bg-primary-100 dark:bg-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:outline-none focus:ring-2 ${
                     errors.name
                       ? "border-red-500 focus:ring-red-500"
-                      : "border-neutral-300 focus:border-neutral-900 focus:ring-neutral-900"
+                      : "border-neutral-300 dark:border-neutral-700 focus:border-neutral-900 dark:focus:border-neutral-600 focus:ring-neutral-900 dark:focus:ring-neutral-600"
                   }`}
                   placeholder="Seu nome completo"
                 />
@@ -155,10 +155,10 @@ export default function ContactForm() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full rounded-lg border px-4 py-3 text-neutral-900 placeholder-neutral-400 transition-colors focus:outline-none focus:ring-2 ${
+                  className={`w-full rounded-lg border px-4 py-3 bg-primary-100 dark:bg-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:outline-none focus:ring-2 ${
                     errors.email
                       ? "border-red-500 focus:ring-red-500"
-                      : "border-neutral-300 focus:border-neutral-900 focus:ring-neutral-900"
+                      : "border-neutral-300 dark:border-neutral-700 focus:border-neutral-900 dark:focus:border-neutral-600 focus:ring-neutral-900 dark:focus:ring-neutral-600"
                   }`}
                   placeholder="seu@email.com"
                 />
@@ -180,10 +180,10 @@ export default function ContactForm() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`w-full rounded-lg border px-4 py-3 text-neutral-900 placeholder-neutral-400 transition-colors focus:outline-none focus:ring-2 ${
+                  className={`w-full rounded-lg border px-4 py-3 bg-primary-100 dark:bg-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:outline-none focus:ring-2 ${
                     errors.phone
                       ? "border-red-500 focus:ring-red-500"
-                      : "border-neutral-300 focus:border-neutral-900 focus:ring-neutral-900"
+                      : "border-neutral-300 dark:border-neutral-700 focus:border-neutral-900 dark:focus:border-neutral-600 focus:ring-neutral-900 dark:focus:ring-neutral-600"
                   }`}
                   placeholder="(11) 99999-9999"
                 />
@@ -205,10 +205,10 @@ export default function ContactForm() {
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full rounded-lg border px-4 py-3 text-neutral-900 placeholder-neutral-400 transition-colors focus:outline-none focus:ring-2 resize-none ${
+                  className={`w-full rounded-lg border px-4 py-3 bg-primary-100 dark:bg-neutral-800 text-neutral-900 dark:text-white placeholder-neutral-400 dark:placeholder-neutral-500 transition-colors focus:outline-none focus:ring-2 resize-none ${
                     errors.message
                       ? "border-red-500 focus:ring-red-500"
-                      : "border-neutral-300 focus:border-neutral-900 focus:ring-neutral-900"
+                      : "border-neutral-300 dark:border-neutral-700 focus:border-neutral-900 dark:focus:border-neutral-600 focus:ring-neutral-900 dark:focus:ring-neutral-600"
                   }`}
                   placeholder="Conte-nos sobre seu projeto, ideia ou desafio..."
                 />
@@ -234,7 +234,7 @@ export default function ContactForm() {
               <Button
                 type="submit"
                 size="lg"
-                variant="primary"
+                variant="secondary"
                 disabled={isSubmitting}
                 className="w-full"
               >
